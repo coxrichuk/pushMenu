@@ -1,0 +1,13 @@
+{
+  "name": "pushMenu",
+  "version": "0.1.0",
+  "authors": [
+    "Richard Cox <richard@emosaic.co.uk>"
+  ],
+  "description": "jQuery multiple level push menu",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.9.1"
+  }
+}

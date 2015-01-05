@@ -1,0 +1,34 @@
+# Hide user content
+.sass-cache
+
+# File used to enter maintenance mode
+/maintenance
+
+# Ignore DreamWeaver
+_notes
+
+# Ignore Netbeans, PhpStorm rubbish
+/.settings
+/.idea
+/nbproject
+
+# OS dross
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# NPM
+npm-debug.log
+/node_modules
+
+# Ignore bower dependencies down dir - these should be moved inside the source dir
+/bower_components
+
+# gitignore temp file
+.gitignore~
+
+# Ignore the public / pub dir - this is compiled from source any way
+/pub
+/public
