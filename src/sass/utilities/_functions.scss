@@ -1,0 +1,33 @@
+// Helper function to strip a number of any unit
+// 
+// $number  - The number to be checked and stripped
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+// Helper function to convert px to em
+//
+// $pixels      - The pixel value to be converted
+// $context     - The context to convert the pixel value
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+@function em($pixels, $context: $site-browser-context) {
+    @return #{strip-units($pixels)/$context}em
+}
+
+// Helper function to convert px to rem
+// When rem is not supported fallsback to px
+// 
+// $pixels      - The pixel value to be converted
+// $support     - If rem is supported by the stylesheet
+//
+// Compatible in IE9+, Firefox 2+, Safari 4+.
+@function rem($pixels, $support: $supported) {
+    @if $support == true {
+        @return #{strip-units($pixels)/$site-browser-context}rem        
+    } @else {
+        @return #{strip-units($pixels)}px  
+    }
+}

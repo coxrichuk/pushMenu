@@ -1,0 +1,59 @@
+// Helper mixins to target specific versions and range of Microsoft Internet Explorer
+// 
+// $support     - If the helpers are supported by the stylesheet
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+
+// Targets ie7 and below
+@mixin lte7($support: $supported)  {
+     @if $support == false {
+         .lte7 & {
+            @content;
+         }
+     }
+}
+
+// Targets ie8 and below
+@mixin lte8($support: $supported)  {
+     @if $support == false {
+         .lte8 & {
+            @content;
+         }
+     }
+}
+
+// Targets ie9 and below
+@mixin lte9($support: $supported)  {
+     @if $support == false {
+         .lte9 & {
+            @content;
+         }
+     }
+}
+
+// Targets ie7
+@mixin ie7($support: $supported)  {
+     @if $support == false {
+         .ie7 & {
+            @content;
+         }
+     }
+}
+
+// Targets ie8
+@mixin ie8($support: $supported)  {
+     @if $support == false {
+         .ie8 & {
+            @content;
+         }
+     }
+}
+
+// Targets ie9
+@mixin ie9($support: $supported)  {
+     @if $support == false {
+         .ie9 & {
+            @content;
+         }
+     }
+}
