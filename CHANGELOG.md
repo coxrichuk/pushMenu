@@ -1,5 +1,9 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO CHAMELEON.
 
+## v1.0.2
+ - FIX: Updated package.json to match npm guidelines
+ - FIX: Updated bower.json to match bower guidelines
+
 ## v1.0.1
  - FIX: Unmarked bower package as private
  - FIX: Upated name in package.json to keep everything consistent
