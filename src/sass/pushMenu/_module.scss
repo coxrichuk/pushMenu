@@ -1,15 +1,23 @@
+html, 
+body, 
+.container,
 .scroller {
-    //overflow-y: scroll;
+    height: 100%;
 }
-
+ 
+.scroller {
+    overflow-y: scroll;
+}
+ 
 .scroller,
 .scroller-inner {
     position: relative;
 }
-
-.site-wrapper   {
+ 
+.container {
     position: relative;
     overflow: hidden;
+    background: #34495e;
 }
 
 .menu-trigger {
@@ -251,20 +259,3 @@
 
 .mp-menu .mp-level.mp-level-overlay > .mp-back,
 .mp-menu .mp-level.mp-level-overlay > .mp-back::after {}
-
-/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* We'll show the first level only */
-/*.no-csstransforms3d .mp-pusher,
-.no-js .mp-pusher {
-    padding-left: 300px;
-}
-
-.no-csstransforms3d .mp-menu .mp-level,
-.no-js .mp-menu .mp-level {
-    display: none;
-}
-
-.no-csstransforms3d .mp-menu > .mp-level,
-.no-js .mp-menu > .mp-level {
-    display: block;
-}*/

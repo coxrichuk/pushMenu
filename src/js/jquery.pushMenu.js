@@ -1,5 +1,5 @@
 /*
- *  jQuery mlpushmenu - v1.0
+ *  jQuery mlpushmenu - v1.0.0
  *  
  *  Made by Richard Cox
  *  Under MIT License
@@ -18,7 +18,7 @@
     // minified (especially when both are regularly referenced in your plugin).
 
     // Create the defaults once
-    var pluginName = "mlpushmenu",
+    var pluginName = "pushMenu",
         defaults = {
         // overlap: there will be a gap between open levels
         // cover: the open levels will be on top of any previous open level

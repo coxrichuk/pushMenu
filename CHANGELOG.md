@@ -1,5 +1,8 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO CHAMELEON.
 
+## v1.0.0
+ - ADD: Basic demo html page setup for
+
 ## v0.1.2
  - ADD: pushMenu task runners set
  - ADD: pushMenu core javascript
