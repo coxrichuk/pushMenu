@@ -1,5 +1,9 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO CHAMELEON.
 
+## v1.0.1
+ - FIX: Unmarked bower package as private
+ - FIX: Upated name in package.json to keep everything consistent
+
 ## v1.0.0
  - ADD: Basic demo html page setup for
 

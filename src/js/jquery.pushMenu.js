@@ -1,5 +1,5 @@
 /*
- *  jQuery mlpushmenu - v1.0.0
+ *  jQuery mlpushmenu - v1.0.1
  *  
  *  Made by Richard Cox
  *  Under MIT License

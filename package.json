@@ -1,6 +1,6 @@
 {
-  "name": "jquery-pushMenu",
-  "version": "1.0.0",
+  "name": "pushMenu",
+  "version": "1.0.1",
   "description": "pushMenu is based on Manoela llic's Multi Level Push Menu, but implemented with jQuery.",
   "keywords": [
     "jQuery.pushMenu.js",
