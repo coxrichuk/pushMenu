@@ -1,10 +1,10 @@
 # jQuery pushMenu (jQuery.pushMenu.js)
 
-## v1.0.2
+## v1.0.3
 
 > *pushMenu* is based on Manoela llic's [Multi Level Push Menu](https://github.com/codrops/MultiLevelPushMenu), but implemented with jQuery.
 
-This plugin is still in its very early stages, but more updates will be coming very sooner with some docs and more niceties
+This plugin is still in its very early stages, but more updates will be coming very soon with some docs and more niceties
 
 ## Demo
 

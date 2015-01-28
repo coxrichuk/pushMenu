@@ -1,4 +1,11 @@
-# THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO CHAMELEON.
+# THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
+
+## v1.0.3
+ - FIX: Allow the wrapper to be configured and to be a jquery object
+ - FIX: Move docs around in the plugin code
+ - FIX: Update incorrectly labeled title attr
+ - FIX: Show all the configuration options
+ - ADD: Minified versions of js
 
 ## v1.0.2
  - FIX: Updated package.json to match npm guidelines

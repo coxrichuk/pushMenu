@@ -1,7 +1,11 @@
 $(document).ready(function(){
     
     $('#mp-menu').pushMenu({
-        trigger: '#trigger'
+        type: 'overlap',
+        levelSpacing: 0,
+        backClass: 'mp-back',
+        trigger: '#trigger',
+        pusher: '#mp-pusher'
     });
     
 });

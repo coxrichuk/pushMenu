@@ -1,5 +1,5 @@
 /*
- *  jQuery mlpushmenu - v1.0.2
+ *  jQuery pushMenu - v1.0.3
  *  
  *  Made by Richard Cox
  *  Under MIT License
@@ -23,11 +23,10 @@
         // overlap: there will be a gap between open levels
         // cover: the open levels will be on top of any previous open level
         type : 'overlap', // overlap || cover
-        // space between each overlaped level
-        levelSpacing : 0,
-        // classname for the element (if any) that when clicked closes the current level
-        backClass : 'mp-back',
-        trigger : '#trigger'
+        levelSpacing : 0, // space between each overlaped level
+        backClass : 'mp-back', // classname for the element (if any) that when clicked closes the current level
+        trigger : '#trigger', // id || class of element to trigger the menu
+        pusher: '#mp-pusher' // the container wrapper that will be moved when the menu is triggered
     };
 
     // The actual plugin constructor
@@ -52,7 +51,8 @@
             // level depth
             this.level = 0;
             // the moving wrapper
-            this.wrapper = document.getElementById( 'mp-pusher' );
+            //this.wrapper = document.getElementById( 'mp-pusher' );
+            this.wrapper = $(this.settings.pusher)[0],
             // the mp-level elements
             this.levels = Array.prototype.slice.call( this.element.querySelectorAll( 'div.mp-level' ) );
             // save the depth of each of these mp-level elements
