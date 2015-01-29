@@ -1,5 +1,8 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v1.1.0
+ - FIX: Now supports multiple levels
+
 ## v1.0.3
  - FIX: Allow the wrapper to be configured and to be a jquery object
  - FIX: Move docs around in the plugin code

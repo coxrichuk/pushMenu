@@ -1,5 +1,5 @@
 /*
- *  jQuery pushMenu - v1.1.0
+ *  jQuery pushMenu - v1.0.3
  *  
  *  Made by Richard Cox
  *  Under MIT License
