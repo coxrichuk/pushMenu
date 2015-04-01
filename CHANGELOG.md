@@ -1,5 +1,11 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.0
+ - ADD: Major release change
+ - FIX: Refactor HTML
+ - FIX: Fixes for IE9 added
+ - ADD: Improve example styling
+
 ## v1.1.0
  - FIX: Now supports multiple levels
 

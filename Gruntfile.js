@@ -50,7 +50,15 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['<%= globalConfig.sass_dir %>/**/*.scss'],
-        tasks: ['sass:dev', 'shell:patternlab'],
+        tasks: ['sass'],
+        options:    {
+            spawn: false,
+            livereload: false
+        }
+      },
+      javascript: {
+        files: ['<%= globalConfig.js_dir_src %>/**/*.js'],
+        tasks: ['sass'],
         options:    {
             spawn: false,
             livereload: false

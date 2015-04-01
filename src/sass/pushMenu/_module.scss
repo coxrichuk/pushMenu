@@ -1,23 +1,57 @@
-html, 
-body, 
-.container,
-.scroller {
-    height: 100%;
+body    {
+    overflow-x: hidden;
+    
+    .ie8 &  {
+        overflow: visible;
+    }
 }
- 
-.scroller {
-    overflow-y: scroll;
-}
- 
-.scroller,
-.scroller-inner {
-    position: relative;
-}
- 
-.container {
-    position: relative;
+
+.site   {
+    float: left;
+    clear: left;
+    width: 100%;
     overflow: hidden;
-    background: #34495e;
+    
+    .ie8 &  {
+        overflow: visible;
+    }
+}
+
+.site-outer {
+    float: left;
+    clear: left;
+    width: 100%;
+    position: relative;
+    left: 0;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &.mp-pushed {
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            -webkit-transition: opacity 0.3s;
+            -moz-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+        }
+    }
+}
+
+.site-wrapper   {
+    overflow: visible;
+    height: auto;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.site-container {
+    position: relative;
 }
 
 .menu-trigger {
@@ -37,12 +71,6 @@ body,
     content: '';
 }
 
-.mp-pusher {
-    position: relative;
-    left: 0;
-    height: 100%;
-}
-
 .mp-menu {
     position: absolute; /* we can't use fixed here :( */
     top: 0;
@@ -55,7 +83,7 @@ body,
     transform: translate3d(-100%, 0, 0);
     
     // ie9
-    @include lte9   {
+    .ie9 &  {
         left: -300px;
     }
 }
@@ -70,7 +98,7 @@ body,
     -moz-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     
-    @include lte9   {
+    .ie9 &  {
         //left: -100%;
         left: -300px
     }
@@ -81,7 +109,7 @@ body,
 }
 
 /* overlays for pusher and for level that gets covered */
-.mp-pusher::after,
+.site-outer:after,
 .mp-level::after,
 .mp-level::before {
     position: absolute;
@@ -93,7 +121,7 @@ body,
     opacity: 0;
 }
 
-.mp-pusher::after,
+.site-outer:after,
 .mp-level::after {
     background: rgba(0,0,0,0.3);
     -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
@@ -106,7 +134,7 @@ body,
     z-index: -1;
 }
 
-.mp-pusher.mp-pushed::after,
+.site-outer.mp-pushed:after,
 .mp-level.mp-level-overlay::after {
     width: 100%;
     height: 100%;
@@ -127,7 +155,7 @@ body,
     opacity: 1;
 }
 
-.mp-pusher,
+.site-outer,
 .mp-level {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -141,7 +169,7 @@ body,
     -moz-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0);
 
-    @include lte9   {
+    .ie9 &  {
         left: -40px\9;
     }
 }
@@ -156,7 +184,7 @@ body,
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     
-    @include lte9   {
+    .ie9 &  {
         left: 0px;
     }
 }
@@ -167,7 +195,7 @@ body,
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     
-    @include lte9   {
+    .ie9 &  {
         left: 0px;
     }
 }
@@ -177,7 +205,7 @@ body,
     -moz-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     
-    @include lte9   {
+    .ie9 &  {
         //left: -100%;
         left: -300px;
     }

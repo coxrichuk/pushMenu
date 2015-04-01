@@ -5,7 +5,7 @@ $(document).ready(function(){
         levelSpacing: 0,
         backClass: 'mp-back',
         trigger: '#trigger',
-        pusher: '#mp-pusher'
+        pusher: '.site-outer'
     });
     
 });

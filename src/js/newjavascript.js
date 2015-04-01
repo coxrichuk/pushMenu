@@ -276,8 +276,8 @@
             for( var i = 0, len = this.levels.length; i < len; ++i ) {
                 var levelEl = this.levels[i];
                 if( levelEl.getAttribute( 'data-level' ) >= this.level + 1 ) {
-                        $(levelEl).removeClass('mp-level-open');
-                        $(levelEl).removeClass('mp-level-overlay');
+                    $(levelEl).removeClass('mp-level-open');
+                    $(levelEl).removeClass('mp-level-overlay');
                 }
                 else if( Number( levelEl.getAttribute( 'data-level' ) ) == this.level ) {
                         $(levelEl).removeClass('mp-level-overlay');
