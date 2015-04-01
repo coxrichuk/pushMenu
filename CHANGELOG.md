@@ -1,5 +1,9 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.1
+ - FIX: Degrade IE8 gracefully
+ - FiX: Remove some stray debug code
+
 ## v2.0.0
  - ADD: Major release change
  - FIX: Refactor HTML

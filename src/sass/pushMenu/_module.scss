@@ -83,7 +83,7 @@ body    {
     transform: translate3d(-100%, 0, 0);
     
     // ie9
-    .ie9 &  {
+    .lte9 &  {
         left: -300px;
     }
 }
@@ -98,7 +98,7 @@ body    {
     -moz-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     
-    .ie9 &  {
+    .lte9 &  {
         //left: -100%;
         left: -300px
     }
@@ -169,7 +169,7 @@ body    {
     -moz-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0);
 
-    .ie9 &  {
+    .lte9 &  {
         left: -40px\9;
     }
 }
@@ -184,7 +184,7 @@ body    {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     
-    .ie9 &  {
+    .lte9 &  {
         left: 0px;
     }
 }
@@ -195,7 +195,7 @@ body    {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     
-    .ie9 &  {
+    .lte9 &  {
         left: 0px;
     }
 }
@@ -205,7 +205,7 @@ body    {
     -moz-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     
-    .ie9 &  {
+    .lte9 &  {
         //left: -100%;
         left: -300px;
     }

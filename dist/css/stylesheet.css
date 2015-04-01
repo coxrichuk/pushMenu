@@ -117,7 +117,7 @@ body {
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
   /* line 86, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-menu {
+  .lte9 .mp-menu {
     left: -300px; }
 
 /* line 91, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
@@ -131,7 +131,7 @@ body {
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
   /* line 101, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-level {
+  .lte9 .mp-level {
     left: -300px; }
   /* line 106, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .mp-level li:before {
@@ -194,7 +194,7 @@ body {
   -moz-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0); }
   /* line 172, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-overlap .mp-level.mp-level-open {
+  .lte9 .mp-overlap .mp-level.mp-level-open {
     left: -40px\9; }
 
 /* First level */
@@ -205,7 +205,7 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
   /* line 187, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-menu > .mp-level, .ie9 .mp-menu > .mp-level.mp-level-open, .ie9 .mp-menu.mp-overlap > .mp-level, .ie9 .mp-menu.mp-overlap > .mp-level.mp-level-open {
+  .lte9 .mp-menu > .mp-level, .lte9 .mp-menu > .mp-level.mp-level-open, .lte9 .mp-menu.mp-overlap > .mp-level, .lte9 .mp-menu.mp-overlap > .mp-level.mp-level-open {
     left: 0px; }
 
 /* cover */
@@ -215,7 +215,7 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
   /* line 198, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-cover .mp-level.mp-level-open {
+  .lte9 .mp-cover .mp-level.mp-level-open {
     left: 0px; }
 
 /* line 203, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
@@ -224,7 +224,7 @@ body {
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
   /* line 208, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
-  .ie9 .mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
+  .lte9 .mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
     left: -300px; }
 
 /* content style */

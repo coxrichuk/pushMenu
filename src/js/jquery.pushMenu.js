@@ -1,5 +1,5 @@
 /*
- *  jQuery pushMenu - v1.1.0
+ *  jQuery pushMenu - v2.0.1
  *  
  *  Made by Richard Cox
  *  Under MIT License
@@ -39,7 +39,10 @@
         this.settings = $.extend({}, defaults, options);
         this._defaults = defaults;
         this._name = pluginName;
-        this.init();
+        
+        if(window.navigator.userAgent.indexOf('MSIE 8') == -1)  {
+            this.init();
+        }
     }
 
     // Avoid Plugin.prototype conflicts
@@ -291,8 +294,6 @@
                     '-o-transform'      : translate,
                     'transform'         : translate
                 });
-                console.log(el);
-                console.log(secondaryVal);
             }
 
         },
