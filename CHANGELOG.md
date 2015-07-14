@@ -1,5 +1,8 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.7
+ - FIX: Bumping package.json and bower.json versions
+
 ## v2.0.6
  - FIX: Building source
 
