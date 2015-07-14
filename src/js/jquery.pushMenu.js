@@ -1,5 +1,5 @@
 /*
- *  jQuery pushMenu - v2.0.1
+ *  jQuery pushMenu - v2.0.4
  *  
  *  Made by Richard Cox
  *  Under MIT License
@@ -26,7 +26,8 @@
         levelSpacing : 0, // space between each overlaped level
         backClass : 'mp-back', // classname for the element (if any) that when clicked closes the current level
         trigger : '#trigger', // id || class of element to trigger the menu
-        pusher: '#mp-pusher' // the container wrapper that will be moved when the menu is triggered
+        pusher: '#mp-pusher', // the container wrapper that will be moved when the menu is triggered
+        scrollTop: false // Should we scroll to the top of the menu when a level is opened
     };
 
     // The actual plugin constructor
@@ -75,8 +76,8 @@
             // if type == "cover" these will serve as hooks to move back to the previous level
             this.levelBack = $('.' + this.settings.backClass, this.element);
             
-            // event type (if mobile use touch events)
-            this.eventtype = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
+            // event type
+            this.eventtype = 'click';
             
             // add the class mp-overlap or mp-cover to the main element depending on options.type
             $(this.element).addClass('mp-' + this.settings.type);
@@ -241,6 +242,11 @@
             }
             // add class mp-level-open to the opening level element
             $(subLevel || this.levels[0]).addClass('mp-level-open');
+            
+            // Scroll to the top of the menu if set
+            if(this.settings.scrollTop) {
+                _self._scrollTop(subLevel || this.levels[0]);
+            }
         },
         // close the menu
         _resetMenu : function() {
@@ -259,10 +265,13 @@
         },
         // translate the el
         _setTransform : function(val, el, secondaryVal) {
+            
+            _self = this;
+            
             el = el || this.wrapper;
             secondaryVal = secondaryVal || false;
             
-            if(false !== this.isIE() && this.isIE() <= 9)   {
+            if(false !== _self.isIE() && _self.isIE() <= 9)   {
             
                 secondaryVal = parseInt(secondaryVal) == 0 ? '-300px' : secondaryVal;
                 
@@ -298,7 +307,6 @@
                     'transform'         : translate
                 });
             }
-
         },
         // removes classes mp-level-open from closing levels
         _toggleLevels : function() {
@@ -322,6 +330,12 @@
                     levelEl.removeClass('mp-level-overlay');
                 }
             });
+        },
+        // Scroll to the top of the element
+        _scrollTop : function(element)    {
+            $('html, body').animate({
+                scrollTop: $(element).offset().top
+            }, 100);
         }
     });
 

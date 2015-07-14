@@ -1,5 +1,10 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.5
+ - ADD: Adding option to scroll to top of menu when moving between levels
+ - ADD: bower.json updated with primary acting files to run pushMenu
+ - ADD: Update the docs with the package management instructions
+
 ## v2.0.4
  - FIX: Bumping package.json version
 

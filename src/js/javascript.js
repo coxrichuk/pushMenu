@@ -5,7 +5,8 @@ $(document).ready(function(){
         levelSpacing: 0,
         backClass: 'mp-back',
         trigger: '#trigger',
-        pusher: '.site-outer'
+        pusher: '.site-outer',
+        scrollTop: false
     });
     
 });

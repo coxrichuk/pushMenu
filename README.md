@@ -1,6 +1,6 @@
 # jQuery pushMenu (jQuery.pushMenu.js)
 
-## v2.0.4
+## v2.0.5
 
 > *pushMenu* is based on Manoela llic's [Multi Level Push Menu](https://github.com/codrops/MultiLevelPushMenu), but implemented with jQuery.
 
@@ -13,6 +13,16 @@
 ## Usage
 
 ### Getting started
+
+### Grab the code
+
+#### Bower
+
+    bower install --save push-menu
+
+#### Node
+
+    npm install push-menu --save
 
 ### Include the CSS
 
@@ -97,7 +107,7 @@
 
             <div class="site-wrapper">
                 <div class="site-container">
-                    <h1><a href="javascript:;" id="trigger" class="burger" title="Open"></a> jquery pushMenu v2.0.3</h1>
+                    <h1><a href="javascript:;" id="trigger" class="burger" title="Open"></a> jquery pushMenu v2.0.5</h1>
 
                     <h2>Site content</h2>
 
@@ -117,18 +127,20 @@
                 levelSpacing: 0,
                 backClass: 'mp-back',
                 trigger: '#trigger',
-                pusher: '.site-outer'
+                pusher: '.site-outer',
+                scrollTop: false
             });
         });
     </script>
 
 ### Options
    
-    type: 'cover'               // cover || overlap     -   Whether the menu level should overlap slightly or completely cover each other
-    levelSpacing: 0             // If the 'type' is set to overlap how much should be visible from the previous level
-    backClass: 'mp-back'        // The back button class
-    trigger: '#trigger'         // What should open the menu on click / touch
-    pusher: '.site-outer'       // What should be moved when the menu opens - The plugin relies on moving the site out of the way to make way for the menu
+    type: 'cover'                       // cover || overlap     -   Whether the menu level should overlap slightly or completely cover each other
+    levelSpacing: 0                     // If the 'type' is set to overlap how much should be visible from the previous level
+    backClass: 'mp-back'                // The back button class
+    trigger: '#trigger'                 // What should open the menu on click / touch
+    pusher: '.site-outer'               // What should be moved when the menu opens - The plugin relies on moving the site out of the way to make way for the menu
+    scrollTop: false                    // true || false    -   If set to true when moving between levels the screen will automatically scroll back to the top
 
 ## Todos
 
@@ -142,4 +154,3 @@
  - Add method to close menu
  - Add option to choose whether to close menu on body click
  - Add option if level has an arbitrary active class menu opens at this level again
- - Add option to scroll to top of the menu when going between levels

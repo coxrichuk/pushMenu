@@ -1,11 +1,15 @@
 {
   "name": "push-menu",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "authors": [
     "Richard Cox <richard@emosaic.co.uk>"
   ],
   "description": "jQuery multiple level push menu",
   "license": "MIT",
+  "main": [
+      "./dist/css/stylesheet.min.css",
+      "./dist/js/jquery.pushMenu.min.js"
+  ],
   "private": false,
   "dependencies": {
     "jquery": "~1.9.1"
