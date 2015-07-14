@@ -1,5 +1,10 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.2
+ - FIX: Menu levels not being set correctly
+ - ADD: Additional documentation added
+ - ADD: Todo list added to docs
+
 ## v2.0.1
  - FIX: Degrade IE8 gracefully
  - FiX: Remove some stray debug code

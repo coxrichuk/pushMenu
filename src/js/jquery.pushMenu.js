@@ -64,7 +64,9 @@
             // save the depth of each of these mp-level elements
             var self = this;
             $.each(this.levels, function(i, element){
-                $(this).data('level', self.getLevelDepth(element, self.element.id, 'mp-level'));
+                level = self.getLevelDepth(element, self.element.id, 'mp-level');
+                
+                $(element).attr('data-level', level);
             });
             
             // the menu items
@@ -156,7 +158,8 @@
                 }
             });
 
-            // opening a sub level menu 
+            // opening a sub level menu
+            
             this.menuItems.forEach(function(el, i) {
                 // check if it has a sub level
                 var subLevel = el.querySelector('div.mp-level');
