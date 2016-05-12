@@ -1,5 +1,8 @@
 # THIS CHANGELOG IS AN ATTEMPT TO DOCUMENT CHANGES TO pushMenu.
 
+## v2.0.8
+ - FIX: Having 100% height set on the wrapper should only be applied when open
+
 ## v2.0.7
  - FIX: Bumping package.json and bower.json versions
 

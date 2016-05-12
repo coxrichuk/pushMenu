@@ -112,15 +112,17 @@ body {
   left: 0;
   z-index: 1;
   width: 300px;
-  height: 100%;
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
-  /* line 86, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 85, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-menu {
     left: -300px; }
+  /* line 89, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  .mp-pushed .mp-menu {
+    height: 100%; }
 
-/* line 91, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 94, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level {
   position: absolute;
   top: 0;
@@ -130,15 +132,15 @@ body {
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
-  /* line 101, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 104, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-level {
     left: -300px; }
-  /* line 106, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 109, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .mp-level li:before {
     content: none; }
 
 /* overlays for pusher and for level that gets covered */
-/* line 114, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 117, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .site-outer:after, .mp-level::after, .mp-level::before {
   position: absolute;
   top: 0;
@@ -148,7 +150,7 @@ body {
   content: '';
   opacity: 0; }
 
-/* line 125, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 128, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .site-outer:after, .mp-level::after {
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
@@ -156,11 +158,11 @@ body {
   transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
   z-index: 10000; }
 
-/* line 133, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 136, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level::after {
   z-index: -1; }
 
-/* line 138, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 141, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .site-outer.mp-pushed:after, .mp-level.mp-level-overlay::after {
   width: 100%;
   height: 100%;
@@ -169,80 +171,80 @@ body {
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
-/* line 147, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 150, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level.mp-level-overlay {
   cursor: pointer; }
 
-/* line 151, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 154, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level.mp-level-overlay.mp-level::before {
   width: 100%;
   height: 100%;
   background: transparent;
   opacity: 1; }
 
-/* line 159, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 162, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .site-outer, .mp-level {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
 
 /* overlap */
-/* line 166, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 169, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-overlap .mp-level.mp-level-open {
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(-40px, 0, 0);
   -moz-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0); }
-  /* line 172, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 175, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-overlap .mp-level.mp-level-open {
     left: -40px\9; }
 
 /* First level */
-/* line 181, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 184, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu > .mp-level, .mp-menu > .mp-level.mp-level-open, .mp-menu.mp-overlap > .mp-level, .mp-menu.mp-overlap > .mp-level.mp-level-open {
   box-shadow: none;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-  /* line 187, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 190, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-menu > .mp-level, .lte9 .mp-menu > .mp-level.mp-level-open, .lte9 .mp-menu.mp-overlap > .mp-level, .lte9 .mp-menu.mp-overlap > .mp-level.mp-level-open {
     left: 0px; }
 
 /* cover */
-/* line 193, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 196, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-cover .mp-level.mp-level-open {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-  /* line 198, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 201, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-cover .mp-level.mp-level-open {
     left: 0px; }
 
-/* line 203, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 206, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
-  /* line 208, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+  /* line 211, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
   .lte9 .mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
     left: -300px; }
 
 /* content style */
-/* line 215, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 218, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level {
   background-color: #FFFFFF; }
 
-/* line 219, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 222, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 234, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 237, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu ul li {
   position: static; }
 
-/* line 237, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 240, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu ul li > a {
   font-size: 14px;
   font-weight: 400;
@@ -252,7 +254,7 @@ body {
   border-bottom: 1px solid #e0dfdd;
   padding: 0px 10px; }
 
-/* line 247, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 250, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu ul li strong {
   font-size: 14px;
   line-height: 29px;
@@ -263,7 +265,7 @@ body {
   border-bottom: 1px solid #000;
   padding: 0px 10px; }
 
-/* line 258, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 261, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-menu ul li a.mp-back {
   background-color: #333;
   font-size: 12px;
@@ -274,7 +276,7 @@ body {
   display: block;
   padding: 0px 10px; }
 
-/* line 280, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
+/* line 283, /home/richard/www/pushmenu/pub/src/sass/pushMenu/module */
 .mp-level > ul > li:first-child > a:hover, .mp-level.mp-level-overlay > ul > li:first-child > a {
   /*box-shadow: inset 0 -1px rgba(0,0,0,0), inset 0 1px rgba(0,0,0,0);*/ }
 
